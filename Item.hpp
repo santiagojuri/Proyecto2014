@@ -5,11 +5,15 @@ class item
 	int item_id; //numero que identifica al item.
 public:
 	/*Metodos*/
-	//constructor por defecto.
 	item(){
-	cout<<"fue creado sin ningun valor"<<endl;} 
+		cout<<"fue creado sin ningun valor con exito"<<endl;
+	}
 	item(int id) //constructor que asigna id especifico.
-	: item_id{id}
-	~item()
+	{
+		item_id=id;
+		cout<<"Fue creado con el valor de"<< id <<endl;
+	}
+
+	~item() //destructor
 	{}
 };
