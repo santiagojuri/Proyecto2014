@@ -1,6 +1,6 @@
 #ifndef QUESTION
 #define QUESTION
-#include "clase_item.h"
+#include "item.cc"
 
 class clase_question
 {
