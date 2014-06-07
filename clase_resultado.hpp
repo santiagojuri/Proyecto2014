@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "clase_paciente/persona"
 
 using namespace std;
 
@@ -7,6 +8,7 @@ class resultado{
 	//Atributos
 	int tiempo;
 	int puntaje;
+	clase_paciente&pac;
 
 public:
 
