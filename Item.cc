@@ -1,5 +1,4 @@
 //inicio de todo
-
 /*Clase que controla un item*/
 class item
 {
