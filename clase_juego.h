@@ -1,7 +1,7 @@
-#fndef JUEGO
-#efine JUEGO
-#nclude "clase_jugador.h"
-#nclude "class_question.h"
+#ifndef JUEGO
+#define JUEGO
+#include "clase_jugador.h"
+#include "class_question.h"
 
 using namespace std;
 
