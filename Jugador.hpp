@@ -1,5 +1,5 @@
 
-#include <stdlib.h> //??? me expican? eso no es de c? :c att:jess
+#include <iostream>
 #ifndef JUGADOR
 #define JUGADOR
 #include <ioestrem>
