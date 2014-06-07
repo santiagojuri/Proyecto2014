@@ -13,7 +13,6 @@ public:
 		item_id=id;
 		cout<<"Fue creado con el valor de"<< id <<endl;
 	}
-
 	~item() //destructor
 	{}
 };
