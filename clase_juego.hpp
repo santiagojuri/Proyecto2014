@@ -2,6 +2,7 @@
 #define JUEGO
 #include "clase_jugador.h"
 #include "class_question.h"
+#pragma once
 
 using namespace std;
 

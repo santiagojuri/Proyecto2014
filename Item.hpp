@@ -1,4 +1,12 @@
 #include <iostream>
+#include <vector>
+#include <list>
+#include <string.h>
+#include <cstdio>
+#include <stdlib.h>
+#include <time.h>
+#include <iterator>
+#pragma once
 /*Clase que controla el item*/
 using namespace std;
 

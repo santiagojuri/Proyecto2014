@@ -5,6 +5,7 @@
 #include "item.h"
 #include "clase_juego.h"
 using namespace std;
+#pragma once
 
 class clase_jugador
 {

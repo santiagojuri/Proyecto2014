@@ -1,27 +1,42 @@
 #include "item.hpp"
+#pragma once
 
 /*Clase que controla la pregunta*/
 class Question
 {
-	/*Atributos*/
-private:
-	std::std::vector<item> Objetos;
+	/*Atributos privados por defecto*/
+	vector<item> Objetos;
 	int level;
 
 public:
 	/*Metodos*/
 
 	//constructores:
+
+	Question();
+
 	Question(int l){
 		level=l;
 	}
 
-	add_item(item i){ //agrega items a la pregunta
+	void add_item(item i){ //agrega items a la pregunta
 		Objetos.push_back(i);
 	}
 
+	void Show_question(vector<item> Objetos)
+	{
+	cout << "{";
+    for(auto x: Objetos)
+    	{
+    		cout << x.get_value() << "  ";
+    	}
+    cout << "}";
+    cout << "\n";
+	}
 
-	void remove_items(item);
+	void remove_items();
+ 
+
 
 	~Question(); //destructor
 
