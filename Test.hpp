@@ -1,7 +1,7 @@
 #ifndef JUEGO
 #define JUEGO
-#include "clase_jugador.h"
-#include "class_question.h"
+#include "jugador.hpp"
+#include "question.hpp"
 #pragma once
 
 using namespace std;
