@@ -1,5 +1,6 @@
 #ifndef JUEGO
 #define JUEGO
+#include <iostream>
 #include "jugador.hpp"
 #include "question.hpp"
 #pragma once
