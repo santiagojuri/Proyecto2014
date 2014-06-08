@@ -2,6 +2,7 @@
 #include <iostream>
 #ifndef JUGADOR
 #define JUGADOR
+#include <vector>
 #include "item.h"
 #include "clase_juego.h"
 using namespace std;
@@ -10,8 +11,6 @@ using namespace std;
 class clase_jugador
 {
 
-	clase_juego& _ref_juego;
-	item& _ref_item;
 
 	vector<item> Item_select;
 
