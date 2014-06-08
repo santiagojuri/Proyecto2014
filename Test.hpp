@@ -8,10 +8,12 @@ using namespace std;
 
 class test
 {
-private:
+	/*Atributos*/
 	int score;
 	int time;
 	vector<question> quest;
+	
+	/*Metodos*/
 };
 
 
