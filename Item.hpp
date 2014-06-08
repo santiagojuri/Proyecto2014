@@ -14,8 +14,10 @@ public:
 	item(int id) //constructor que asigna id especifico.
 	{
 		item_id=id;
-		cout<<"Fue creado con el valor de"<< id <<endl;
+		cout<<"Fue creado con el valor "<< id <<endl;
 	}
+	int get_value(){return item_id;}//retorna el valor del item
+
 	~item() //destructor
 	{}
 };
