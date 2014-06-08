@@ -2,8 +2,6 @@
 
 #pragma once
 
-
-
 /*Clase que trabaja con los datos de la persona o paciente*/
 
 class paciente{
@@ -15,9 +13,7 @@ class paciente{
 public:
 
 	/*Metodos*/
-
 	//constructor
-
 	paciente(){
 		std::cout<<"Paciente por defecto"<<"\n";
 	}
@@ -29,7 +25,6 @@ public:
 	}
 
 	//obtener datos
-
 	std::string get_name(){ return nombre;}
 	int get_codigo(){return codigo;}
 	int get_edad(){return edad;}
