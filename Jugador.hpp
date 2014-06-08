@@ -2,7 +2,6 @@
 #include <iostream>
 #ifndef JUGADOR
 #define JUGADOR
-#include <ioestrem>
 #include "item.h"
 #include "clase_juego.h"
 using namespace std;

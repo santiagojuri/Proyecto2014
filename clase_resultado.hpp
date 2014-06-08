@@ -1,4 +1,4 @@
-#include <ioestrem>
+#include <iostream>
 #include "clase_paciente/persona"
 
 using namespace std;
