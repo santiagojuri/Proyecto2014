@@ -13,8 +13,6 @@ private:
 	int score;
 	int time;
 
-	class_question& question;
-
 	vector<question> quest;
 };
 
