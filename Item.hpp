@@ -1,4 +1,5 @@
 /*Clase que controla el item*/
+using namespace std;
 class item
 {
 	/*Atributos (privados por defecto) */
