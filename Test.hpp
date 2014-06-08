@@ -7,7 +7,7 @@
 
 using namespace std;
 
-class clase_juego
+class juego
 {
 private:
 	int score;
