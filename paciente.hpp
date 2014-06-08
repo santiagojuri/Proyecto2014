@@ -1,7 +1,7 @@
 #include <stdio.h>
 #pragma once
 
-clase_paciente{
+paciente{
 
 private:
 
