@@ -2,27 +2,40 @@
 #include "paciente.hpp"
 #pragma once
 
-
 using namespace std;
 
 class resultado{
 
-    //Atributos
+    /*Atributos*/
 	int tiempo;
 	int puntaje;
-
-
 public:
 
-	//metodos
-	int reso(int tiempo1, int puntaje1){
-		
-     
-     		int tiempo = tiempo1;
-     		int puntaje = puntaje1;
-    		cout<<"Tu resultado es en tiempo:"<<tiempo<< "Y" <<puntaje;          
+	/*Metodos*/
+	//constructor
+
+	resultado(int t, int p){
+		tiempo =t;
+		puntaje = p;         
 	}
 
-
+	int get_tiempo(){return tiempo;}
+	int get_puntaje(){return puntaje;}
 };
 
+
+//PRUEBA
+// int main(int argc, char const *argv[])
+
+// {
+// 	int tiempo=12;
+// 	int puntaje=980;
+// 	resultado r(tiempo,puntaje);
+
+// 	int t=r.get_tiempo();
+// 	int p=r.get_puntaje();
+
+// 	cout<<"Tiempo:"<< t<<endl;
+// 	cout<<"Puntaje:"<< p<<endl;
+
+// }
