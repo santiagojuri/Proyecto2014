@@ -13,7 +13,7 @@ public:
 
 	//constructores:
 
-	Question();
+	Question(){};
 
 	Question(int l){
 		level=l;
@@ -23,7 +23,7 @@ public:
 		Objetos.push_back(i);
 	}
 
-	void Show_question(vector<item> Objetos)
+	void Show_question()
 	{
 	cout << "{";
     for(auto x: Objetos)
@@ -34,11 +34,11 @@ public:
     cout << "\n";
 	}
 
-	void remove_items();
+	void remove_items(); 
  
 
 
-	~Question(); //destructor
+	~Question(){}; //destructor
 
 };
 
