@@ -15,17 +15,10 @@ public:
 
 	Question(){};
 
-	Question(int l){
-		level=l;
-	}
+	Question(){int n}
 
-	template <typename T>
-	miVector<T> crear(int n)
-	{
-    	miVector<T> v(n);
-  		for(int i=0;i<n;++i)
-    	v[i] = i;
-  		return v;
+	Set_level(int l){
+		level=l;
 	}
 
 	void add_item(item i){ //agrega items a la pregunta
