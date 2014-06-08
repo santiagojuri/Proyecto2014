@@ -1,12 +1,18 @@
 #include <iostream>
 #pragma once
 
-paciente{
+/*Clase que trabaja con los datos de la persona o paciente*/
+class paciente{
 
 private:
 
-  char nombre;
+  std::string nombre;
   int codigo;
-  
+  int edad;
+public:
+
+  paciente(std::string name,int cd, int age){
+    
+  }
 };
   
