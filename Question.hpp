@@ -15,10 +15,13 @@ public:
 
 	Question(){};
 
-	Question(){int n}
+	/*Question(int n,int s)
+	{
 
-	Set_level(int l){
-		level=l;
+	}*/
+
+	void Set_level(int l){
+		level = l;
 	}
 
 	void add_item(item i){ //agrega items a la pregunta
