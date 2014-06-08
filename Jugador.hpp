@@ -1,26 +1,18 @@
-
 #include <iostream>
-#ifndef JUGADOR
-#define JUGADOR
 #include <vector>
 #include "item.h"
-#include "clase_juego.h"
+#include "juego.hpp"
 using namespace std;
 #pragma once
 
-class clase_jugador
+class jugador
 {
-
 
 	vector<item> Item_select;
 
 
 };
 
-
-
-
-#endif
 
 
 int main(int argc, char const *argv[])
