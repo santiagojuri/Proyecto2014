@@ -1,5 +1,5 @@
 #include <iostream>
-#include "clase_paciente/persona"
+#include "clase_paciente"
 #pragma once
 
 using namespace std;
