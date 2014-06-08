@@ -1,5 +1,4 @@
-#ifndef JUEGO
-#define JUEGO
+
 #include <iostream>
 #include "jugador.hpp"
 #include "question.hpp"
@@ -7,16 +6,14 @@
 
 using namespace std;
 
-class juego
+class test
 {
 private:
 	int score;
 	int time;
-
 	vector<question> quest;
 };
 
 
 
 
-#endif
