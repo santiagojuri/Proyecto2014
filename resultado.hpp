@@ -9,7 +9,7 @@ class resultado{
 	//Atributos
 	int tiempo;
 	int puntaje;
-	clase_paciente&pac;
+	
 
 public:
 
