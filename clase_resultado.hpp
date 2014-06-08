@@ -20,7 +20,7 @@ public:
 
 resultado::reso(int tiempo1, int puntaje1){
 	tiempo = tiempo1;
-	puntaje = puntaje;
+	puntaje = puntaje1;
 	
 	cout<<"Tu resultado es en tiempo:"<<tiempo<< "Y" <<puntaje;
 
