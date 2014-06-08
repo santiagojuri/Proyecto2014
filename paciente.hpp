@@ -14,10 +14,6 @@ public:
 
 	/*Metodos*/
 	//constructor
-	paciente(){
-		std::cout<<"Paciente por defecto"<<"\n";
-	}
-
 	paciente(std::string name,int cd,int age){
 		nombre=name;
 		codigo=cd;
