@@ -33,15 +33,14 @@ public:
 		Objetos.push_back(i);
 	}
 
-	void Show_question()
+	vector<int> Show_question_val()
 	{
-	cout << "{";
+	vector<int> res;
     for(auto x: Objetos)
     	{
-    		cout << x.get_value() << "  ";
+    		res.push_back(x.get_value());
     	}
-    cout << "}";
-    cout << "\n";
+    return res;
 	}
 
 	void remove_items(); 
