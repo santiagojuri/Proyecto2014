@@ -15,10 +15,15 @@ public:
 
 	Question(){};
 
-	/*Question(int n,int s)
+	Question(int n,int s) //Constructor de una clase de n items de valores entre 1 y s
 	{
-
-	}*/
+		srand(time(0));
+		for(int i=0;i<n;i++)
+		{
+			item a(s);
+			Objetos.push_back(a);
+		}
+	}
 
 	void Set_level(int l){
 		level = l;

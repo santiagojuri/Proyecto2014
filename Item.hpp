@@ -25,12 +25,11 @@ public:
 		item_id=id;
 		cout<<"Fue creado con el valor "<< id <<endl;
 	}
-	/*item(int s) // Constructor con un numero random entre 0 y n
+	item(int s) // Constructor con un numero random entre 0 y n
 	{	
-		srand(time(NULL));
 		int n=(rand()%s+1);	
 		item_id = n;
-	}*/
+	}
 
 	int get_value(){return item_id;}//retorna el valor del item
 
