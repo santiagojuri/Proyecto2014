@@ -4,9 +4,10 @@
 /*Clase que controla la pregunta*/
 class Question
 {
-	/*Atributos privados por defecto*/
-	vector<item> Objetos;
+	/*Atributos*/
 	int level;
+protected:
+	vector<item> Objetos;
 
 public:
 	/*Metodos*/
@@ -29,7 +30,9 @@ public:
 		level = l;
 	}
 
-	void add_item(item i){ //agrega items a la pregunta
+	void add_item(int n){ //agrega items a la pregunta
+		item i;
+		i.Set_value(n);
 		Objetos.push_back(i);
 	}
 
