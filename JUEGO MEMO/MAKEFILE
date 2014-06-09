@@ -1,0 +1,11 @@
+CC=g++
+CFLAGS=-std=c++11
+
+all: demo
+
+
+demo: Prueba2.cpp
+	$(CC) ${CFLAGS} Prueba2.cpp -o demo -O3
+
+clean:
+	rm -rf *o demo
