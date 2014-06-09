@@ -28,7 +28,7 @@ public:
 
 	vector<int> get_ans(){return ans;}
 
-	Answers(int n,int s){ //Constructor de una clase de n items de valores entre 1 y s
+	Answers(int n,int s){
 		srand(time(0));
 		for(int i=0;i<n;i++)
 		{
@@ -36,6 +36,6 @@ public:
 			ans.push_back(a);
 		}
 	}
-	~Answers(){}; //destructor
+	~Answers(){}; 
 
 };
