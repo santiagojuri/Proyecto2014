@@ -14,7 +14,7 @@ public:
 
 	Answers(){};
 
-	Answers(int i){ans.push_back(i);};
+	void add_ans(int i){ans.push_back(i);};
 
 	Answers(int n,int s){ //Constructor de una clase de n items de valores entre 1 y s
 		srand(time(0));

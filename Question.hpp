@@ -33,6 +33,8 @@ public:
 		Objetos.push_back(i);
 	}
 
+	vector<item> get_Object(){return Objetos;}
+
 	vector<int> Show_question_val()
 	{
 	vector<int> res;
