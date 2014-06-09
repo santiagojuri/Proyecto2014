@@ -18,12 +18,12 @@ public:
 	/*Metodos*/
 	item(){
 		item_id=0;
-		cout<<"fue creado sin ningun valor con exito"<<endl;
+		//cout<<"fue creado sin ningun valor con exito"<<endl;
 	}
 	void Set_value(int id) //Asigna un id especifico.
 	{
 		item_id=id;
-		cout<<"Fue creado con el valor "<< id <<endl;
+		//cout<<"Fue creado con el valor "<< id <<endl;
 	}
 	item(int s) // Constructor con un numero random entre 0 y n
 	{	
