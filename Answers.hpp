@@ -14,20 +14,16 @@ public:
 
 	Answers(){};
 
-	Answers(int n,int s) //Constructor de una clase de n items de valores entre 1 y s
-	{
+	Answers(int i){ans.push_back(i);};
+
+	Answers(int n,int s){ //Constructor de una clase de n items de valores entre 1 y s
 		srand(time(0));
 		for(int i=0;i<n;i++)
 		{
-			int a(s);
+			int a=(rand()%s+1);;
 			ans.push_back(a);
 		}
 	}
-
-	void add_ans(int i){ //agrega items a la pregunta
-		Objetos.push_back(i);
-	}
-
 	~Answers(){}; //destructor
 
 };
