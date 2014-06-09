@@ -50,8 +50,6 @@ public:
 
 	void remove_items(); 
  
-
-
 	~Question(){}; //destructor
 
 };

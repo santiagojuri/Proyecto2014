@@ -27,7 +27,7 @@ public:
 	}
 	item(int s) // Constructor con un numero random entre 0 y n
 	{	
-		int n=(rand()%s+1);	
+		int n=(rand()%s);	
 		item_id = n;
 	}
 
