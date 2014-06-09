@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -71,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,6 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa0a8d162db42d785f5050634a4dc9471"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_question.html#aa0a8d162db42d785f5050634a4dc9471">Show_question_val</a> ()</td></tr>
 <tr class="separator:aa0a8d162db42d785f5050634a4dc9471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9283fb5357e39ed58a743f18629040"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_question.html#a8d9283fb5357e39ed58a743f18629040">~Question</a> ()</td></tr>
+<tr class="memdesc:a8d9283fb5357e39ed58a743f18629040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a8d9283fb5357e39ed58a743f18629040">More...</a><br /></td></tr>
 <tr class="separator:a8d9283fb5357e39ed58a743f18629040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -124,7 +124,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aee4dca57403e91e0f2062499ba2955a9"><td class="memItemLeft" align="right" valign="top">vector&lt; <a class="el" href="classitem.html">item</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a></td></tr>
 <tr class="separator:aee4dca57403e91e0f2062499ba2955a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Item is a class conformed by a vector&lt;item&gt; and an integer</p>
+<p>This class is focused to be an object with multiple uses </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2e1167d0407c7530b4f7a7492d0050d0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -145,6 +148,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructor by default Creates an item type with parameters in default value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;none&gt;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_question.html#a958c203567c631b25004074f478d205b">Question(int n, int s)</a> </dd></dl>
 
 </div>
 </div>
@@ -179,6 +189,14 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructor Creates a <a class="el" href="class_question.html">Question</a> type with two parameters integer, n is the size of the vector (amount of items) of items and s is the range from 0 to s of the random number which its generated a new item. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>integer argument </td></tr>
+    <tr><td class="paramname">s</td><td>integer argument </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_question.html#a2e1167d0407c7530b4f7a7492d0050d0">Question()</a> </dd></dl>
 
 </div>
 </div>
@@ -202,6 +220,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
+<p>Destroys the item type. </p>
 
 </div>
 </div>
@@ -227,6 +248,12 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Method that depends on the n integer adds an item to de vector of items with a value of n </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>integer argument </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -250,6 +277,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Method that get the attribute of the class; Objetos. Return the vector&lt;item&gt; of objects </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;none&gt;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vector&lt;item&gt; Objetos </dd></dl>
 
 </div>
 </div>
@@ -274,6 +308,12 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Method that depends on the l integer Sets the level of an item type to the value l </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>integer argument </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -297,6 +337,13 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Method that returns a vector&lt;int&gt; Transforms the vector&lt;item&gt; to a vector&lt;int&gt; </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;none&gt;</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>vector&lt;int&gt; res </dd></dl>
 
 </div>
 </div>
@@ -327,7 +374,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 9 2014 11:01:50 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 9 2014 11:44:23 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

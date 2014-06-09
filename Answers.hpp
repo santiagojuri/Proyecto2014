@@ -4,7 +4,7 @@
 
 /*! Answer is a class conformed by a vector<int>*/
 /*!This class is focused to be the answer of a 
-question or the selection is made by the user*/
+question or to be a vector conformed b the selection made by the user*/
 class Answers
 {
 	vector<int> ans; /*!< Atribute of the class */
@@ -63,7 +63,7 @@ public:
 	/**
        * Method to get Answers data
        * This method get the vector<int> ans of the class Answers
-       \sa 
+       \return vector<int> ans 
        */
 	vector<int> get_ans(){return ans;}
 

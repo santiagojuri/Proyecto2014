@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -95,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classitem.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classitem.html">item</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> item_id; </div>
@@ -115,13 +115,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classitem.html#a7ceb113f8aa1662fbf74b53714d65da7">   56</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classitem.html#a7ceb113f8aa1662fbf74b53714d65da7">get_value</a>(){<span class="keywordflow">return</span> item_id;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classitem.html#ae1792174ea9d664d6413f5ad0de38d74">   62</a></span>&#160;    <a class="code" href="classitem.html#ae1792174ea9d664d6413f5ad0de38d74">~item</a>(){}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="ttc" id="classitem_html_a7ceb113f8aa1662fbf74b53714d65da7"><div class="ttname"><a href="classitem.html#a7ceb113f8aa1662fbf74b53714d65da7">item::get_value</a></div><div class="ttdeci">int get_value()</div><div class="ttdef"><b>Definition:</b> Item.hpp:56</div></div>
-<div class="ttc" id="classitem_html_ae1792174ea9d664d6413f5ad0de38d74"><div class="ttname"><a href="classitem.html#ae1792174ea9d664d6413f5ad0de38d74">item::~item</a></div><div class="ttdeci">~item()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> Item.hpp:62</div></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classitem.html#a7ceb113f8aa1662fbf74b53714d65da7">   57</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classitem.html#a7ceb113f8aa1662fbf74b53714d65da7">get_value</a>(){<span class="keywordflow">return</span> item_id;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classitem.html#ae1792174ea9d664d6413f5ad0de38d74">   63</a></span>&#160;    <a class="code" href="classitem.html#ae1792174ea9d664d6413f5ad0de38d74">~item</a>(){}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="ttc" id="classitem_html_a7ceb113f8aa1662fbf74b53714d65da7"><div class="ttname"><a href="classitem.html#a7ceb113f8aa1662fbf74b53714d65da7">item::get_value</a></div><div class="ttdeci">int get_value()</div><div class="ttdef"><b>Definition:</b> Item.hpp:57</div></div>
+<div class="ttc" id="classitem_html_ae1792174ea9d664d6413f5ad0de38d74"><div class="ttname"><a href="classitem.html#ae1792174ea9d664d6413f5ad0de38d74">item::~item</a></div><div class="ttdeci">~item()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> Item.hpp:63</div></div>
 <div class="ttc" id="classitem_html_ac8395f04ecf257cd8a80e15f8ceb53fe"><div class="ttname"><a href="classitem.html#ac8395f04ecf257cd8a80e15f8ceb53fe">item::item</a></div><div class="ttdeci">item(int s)</div><div class="ttdef"><b>Definition:</b> Item.hpp:35</div></div>
 <div class="ttc" id="classitem_html_a344fbf6e3db0d59e0c8ac75cd42ee144"><div class="ttname"><a href="classitem.html#a344fbf6e3db0d59e0c8ac75cd42ee144">item::item</a></div><div class="ttdeci">item()</div><div class="ttdef"><b>Definition:</b> Item.hpp:25</div></div>
 <div class="ttc" id="classitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> Item.hpp:15</div></div>
@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 9 2014 11:01:50 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 9 2014 11:44:23 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

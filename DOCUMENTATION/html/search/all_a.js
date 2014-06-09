@@ -5,6 +5,5 @@ var searchData=
   ['set_5fvalue',['Set_value',['../classitem.html#a2ffe516ed0acc8638af2d743fce0cbb0',1,'item']]],
   ['show',['show',['../classquestion__matriz.html#a1b6543dc9f0ff36cf44ccb47a141ca99',1,'question_matriz']]],
   ['show2',['show2',['../_complement2_8hpp.html#a5def25f0336aa0e1653234bdd91ebd68',1,'Complement2.hpp']]],
-  ['show_5fquestion_5fval',['Show_question_val',['../class_question.html#aa0a8d162db42d785f5050634a4dc9471',1,'Question']]],
-  ['std',['std',['../namespacestd.html',1,'']]]
+  ['show_5fquestion_5fval',['Show_question_val',['../class_question.html#aa0a8d162db42d785f5050634a4dc9471',1,'Question']]]
 ];

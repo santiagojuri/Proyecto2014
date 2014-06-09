@@ -37,7 +37,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -70,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,73 +86,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="_question_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_item_8hpp.html">item.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/*Clase que controla la pregunta*/</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_question.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_question.html">Question</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">/*Atributos*/</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">int</span> level;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">   10</a></span>&#160;    vector&lt;item&gt; <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">/*Metodos*/</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//constructores:</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_question.html#a2e1167d0407c7530b4f7a7492d0050d0">   17</a></span>&#160;    <a class="code" href="class_question.html#a2e1167d0407c7530b4f7a7492d0050d0">Question</a>(){};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_question.html#a958c203567c631b25004074f478d205b">   19</a></span>&#160;    <a class="code" href="class_question.html#a958c203567c631b25004074f478d205b">Question</a>(<span class="keywordtype">int</span> n,<span class="keywordtype">int</span> s) <span class="comment">//Constructor de una clase de n items de valores entre 1 y s</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        srand(time(0));</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;n;i++)</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="classitem.html">item</a> a(s);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>.push_back(a);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_question.html#a7b457f4106d45132ad45d22ad621f3f9">   29</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_question.html#a7b457f4106d45132ad45d22ad621f3f9">Set_level</a>(<span class="keywordtype">int</span> l){</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        level = l;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_question.html#a0bb8e8be70b5ccc72e9918bca35ca35a">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_question.html#a0bb8e8be70b5ccc72e9918bca35ca35a">add_item</a>(<span class="keywordtype">int</span> n){ <span class="comment">//agrega items a la pregunta</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classitem.html">item</a> i;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        i.<a class="code" href="classitem.html#a2ffe516ed0acc8638af2d743fce0cbb0">Set_value</a>(n);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>.push_back(i);</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_question.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_question.html">Question</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">int</span> level;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">   11</a></span>&#160;    vector&lt;item&gt; <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_question.html#a2e1167d0407c7530b4f7a7492d0050d0">   20</a></span>&#160;    <a class="code" href="class_question.html#a2e1167d0407c7530b4f7a7492d0050d0">Question</a>(){};</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_question.html#a958c203567c631b25004074f478d205b">   29</a></span>&#160;    <a class="code" href="class_question.html#a958c203567c631b25004074f478d205b">Question</a>(<span class="keywordtype">int</span> n,<span class="keywordtype">int</span> s) </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        srand(time(0));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0;i&lt;n;i++)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="classitem.html">item</a> a(s);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>.push_back(a);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_question.html#afafe6fd5ed376966f808c65749da510a">   39</a></span>&#160;    vector&lt;item&gt; <a class="code" href="class_question.html#afafe6fd5ed376966f808c65749da510a">get_Object</a>(){<span class="keywordflow">return</span> <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_question.html#aa0a8d162db42d785f5050634a4dc9471">   41</a></span>&#160;    vector&lt;int&gt; <a class="code" href="class_question.html#aa0a8d162db42d785f5050634a4dc9471">Show_question_val</a>()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    vector&lt;int&gt; res;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x: <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            res.push_back(x.get_value());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> res;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_question.html#a8d9283fb5357e39ed58a743f18629040">   51</a></span>&#160;    <a class="code" href="class_question.html#a8d9283fb5357e39ed58a743f18629040">~Question</a>(){}; <span class="comment">//destructor</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="ttc" id="class_question_html_afafe6fd5ed376966f808c65749da510a"><div class="ttname"><a href="class_question.html#afafe6fd5ed376966f808c65749da510a">Question::get_Object</a></div><div class="ttdeci">vector&lt; item &gt; get_Object()</div><div class="ttdef"><b>Definition:</b> Question.hpp:39</div></div>
-<div class="ttc" id="class_question_html"><div class="ttname"><a href="class_question.html">Question</a></div><div class="ttdef"><b>Definition:</b> Question.hpp:5</div></div>
-<div class="ttc" id="class_question_html_a0bb8e8be70b5ccc72e9918bca35ca35a"><div class="ttname"><a href="class_question.html#a0bb8e8be70b5ccc72e9918bca35ca35a">Question::add_item</a></div><div class="ttdeci">void add_item(int n)</div><div class="ttdef"><b>Definition:</b> Question.hpp:33</div></div>
-<div class="ttc" id="class_question_html_a2e1167d0407c7530b4f7a7492d0050d0"><div class="ttname"><a href="class_question.html#a2e1167d0407c7530b4f7a7492d0050d0">Question::Question</a></div><div class="ttdeci">Question()</div><div class="ttdef"><b>Definition:</b> Question.hpp:17</div></div>
-<div class="ttc" id="class_question_html_a958c203567c631b25004074f478d205b"><div class="ttname"><a href="class_question.html#a958c203567c631b25004074f478d205b">Question::Question</a></div><div class="ttdeci">Question(int n, int s)</div><div class="ttdef"><b>Definition:</b> Question.hpp:19</div></div>
-<div class="ttc" id="class_question_html_a7b457f4106d45132ad45d22ad621f3f9"><div class="ttname"><a href="class_question.html#a7b457f4106d45132ad45d22ad621f3f9">Question::Set_level</a></div><div class="ttdeci">void Set_level(int l)</div><div class="ttdef"><b>Definition:</b> Question.hpp:29</div></div>
-<div class="ttc" id="class_question_html_aa0a8d162db42d785f5050634a4dc9471"><div class="ttname"><a href="class_question.html#aa0a8d162db42d785f5050634a4dc9471">Question::Show_question_val</a></div><div class="ttdeci">vector&lt; int &gt; Show_question_val()</div><div class="ttdef"><b>Definition:</b> Question.hpp:41</div></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_question.html#a7b457f4106d45132ad45d22ad621f3f9">   44</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_question.html#a7b457f4106d45132ad45d22ad621f3f9">Set_level</a>(<span class="keywordtype">int</span> l){</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        level = l;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_question.html#a0bb8e8be70b5ccc72e9918bca35ca35a">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_question.html#a0bb8e8be70b5ccc72e9918bca35ca35a">add_item</a>(<span class="keywordtype">int</span> n){ <span class="comment">//agrega items a la pregunta</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classitem.html">item</a> i;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        i.<a class="code" href="classitem.html#a2ffe516ed0acc8638af2d743fce0cbb0">Set_value</a>(n);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>.push_back(i);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_question.html#afafe6fd5ed376966f808c65749da510a">   63</a></span>&#160;    vector&lt;item&gt; <a class="code" href="class_question.html#afafe6fd5ed376966f808c65749da510a">get_Object</a>(){<span class="keywordflow">return</span> <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_question.html#aa0a8d162db42d785f5050634a4dc9471">   70</a></span>&#160;    vector&lt;int&gt; <a class="code" href="class_question.html#aa0a8d162db42d785f5050634a4dc9471">Show_question_val</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    vector&lt;int&gt; res;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span> x: <a class="code" href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Objetos</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            res.push_back(x.get_value());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> res;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_question.html#a8d9283fb5357e39ed58a743f18629040">   83</a></span>&#160;    <a class="code" href="class_question.html#a8d9283fb5357e39ed58a743f18629040">~Question</a>(){}; <span class="comment">//destructor</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="ttc" id="class_question_html_afafe6fd5ed376966f808c65749da510a"><div class="ttname"><a href="class_question.html#afafe6fd5ed376966f808c65749da510a">Question::get_Object</a></div><div class="ttdeci">vector&lt; item &gt; get_Object()</div><div class="ttdef"><b>Definition:</b> Question.hpp:63</div></div>
+<div class="ttc" id="class_question_html"><div class="ttname"><a href="class_question.html">Question</a></div><div class="ttdef"><b>Definition:</b> Question.hpp:6</div></div>
+<div class="ttc" id="class_question_html_a0bb8e8be70b5ccc72e9918bca35ca35a"><div class="ttname"><a href="class_question.html#a0bb8e8be70b5ccc72e9918bca35ca35a">Question::add_item</a></div><div class="ttdeci">void add_item(int n)</div><div class="ttdef"><b>Definition:</b> Question.hpp:52</div></div>
+<div class="ttc" id="class_question_html_a2e1167d0407c7530b4f7a7492d0050d0"><div class="ttname"><a href="class_question.html#a2e1167d0407c7530b4f7a7492d0050d0">Question::Question</a></div><div class="ttdeci">Question()</div><div class="ttdef"><b>Definition:</b> Question.hpp:20</div></div>
+<div class="ttc" id="class_question_html_a958c203567c631b25004074f478d205b"><div class="ttname"><a href="class_question.html#a958c203567c631b25004074f478d205b">Question::Question</a></div><div class="ttdeci">Question(int n, int s)</div><div class="ttdef"><b>Definition:</b> Question.hpp:29</div></div>
+<div class="ttc" id="class_question_html_a7b457f4106d45132ad45d22ad621f3f9"><div class="ttname"><a href="class_question.html#a7b457f4106d45132ad45d22ad621f3f9">Question::Set_level</a></div><div class="ttdeci">void Set_level(int l)</div><div class="ttdef"><b>Definition:</b> Question.hpp:44</div></div>
+<div class="ttc" id="class_question_html_aa0a8d162db42d785f5050634a4dc9471"><div class="ttname"><a href="class_question.html#aa0a8d162db42d785f5050634a4dc9471">Question::Show_question_val</a></div><div class="ttdeci">vector&lt; int &gt; Show_question_val()</div><div class="ttdef"><b>Definition:</b> Question.hpp:70</div></div>
 <div class="ttc" id="classitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> Item.hpp:15</div></div>
-<div class="ttc" id="class_question_html_a8d9283fb5357e39ed58a743f18629040"><div class="ttname"><a href="class_question.html#a8d9283fb5357e39ed58a743f18629040">Question::~Question</a></div><div class="ttdeci">~Question()</div><div class="ttdef"><b>Definition:</b> Question.hpp:51</div></div>
-<div class="ttc" id="class_question_html_aee4dca57403e91e0f2062499ba2955a9"><div class="ttname"><a href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Question::Objetos</a></div><div class="ttdeci">vector&lt; item &gt; Objetos</div><div class="ttdef"><b>Definition:</b> Question.hpp:10</div></div>
+<div class="ttc" id="class_question_html_a8d9283fb5357e39ed58a743f18629040"><div class="ttname"><a href="class_question.html#a8d9283fb5357e39ed58a743f18629040">Question::~Question</a></div><div class="ttdeci">~Question()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> Question.hpp:83</div></div>
+<div class="ttc" id="class_question_html_aee4dca57403e91e0f2062499ba2955a9"><div class="ttname"><a href="class_question.html#aee4dca57403e91e0f2062499ba2955a9">Question::Objetos</a></div><div class="ttdeci">vector&lt; item &gt; Objetos</div><div class="ttdef"><b>Definition:</b> Question.hpp:11</div></div>
 <div class="ttc" id="_item_8hpp_html"><div class="ttname"><a href="_item_8hpp.html">Item.hpp</a></div></div>
 <div class="ttc" id="classitem_html_a2ffe516ed0acc8638af2d743fce0cbb0"><div class="ttname"><a href="classitem.html#a2ffe516ed0acc8638af2d743fce0cbb0">item::Set_value</a></div><div class="ttdeci">void Set_value(int id)</div><div class="ttdef"><b>Definition:</b> Item.hpp:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 9 2014 11:01:50 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 9 2014 11:44:23 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

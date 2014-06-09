@@ -8,7 +8,7 @@
 #include <iterator>
 #pragma once
 
-using namespace std;/**\namespace std*/
+using namespace std;
 
 /*! Item is a class conformed by a integer item_id*/
 /*!This class is focused to be an object with multiple uses*/
@@ -29,7 +29,7 @@ public:
 	 /**
    	   * Constructor that depends on s integer
    	   * Creates an item type with a random integer between 0 and "s"
-   	   \param s
+   	   \param s integer argument
 	   \sa item()
    	   */
    	item(int s) 
@@ -41,7 +41,7 @@ public:
 	 /**
    	   * Method that depends on the id integer
    	   * Sets the item_id of an item type to the value id
-   	   \param id
+   	   \param id integer argument
    	   */
 	void Set_value(int id) 
 	{
@@ -52,6 +52,7 @@ public:
 	 /**
    	   * Method the get the value of the item_id
    	   * Get the data item_id of the item
+   	   \return item item_id 
    	   */
 	int get_value(){return item_id;}
 
