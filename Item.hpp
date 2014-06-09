@@ -7,30 +7,57 @@
 #include <time.h>
 #include <iterator>
 #pragma once
-/*Clase que controla el item*/
-using namespace std;
 
+using namespace std;/**\namespace std*/
+
+/*! Item is a class conformed by a integer item_id*/
+/*!This class is focused to be an object with multiple uses*/
 class item
 {
 	int item_id; 
 public:
+	 /**
+   	   * Constructor by default
+   	   * Creates an item type with parameter "integer item_id = 0"
+   	   \param <none>
+   	   \sa item(int s)
+   	   */
 	item(){
 		item_id=0;
 		
 	}
-	void Set_value(int id) //Asigna un id especifico.
-	{
-		item_id=id;
-	
-	}
-	item(int s) // Constructor con un numero random entre 0 y n
+	 /**
+   	   * Constructor that depends on s integer
+   	   * Creates an item type with a random integer between 0 and "s"
+   	   \param s
+	   \sa item()
+   	   */
+   	item(int s) 
 	{	
 		int n=(rand()%s);	
 		item_id = n;
 	}
 
-	int get_value(){return item_id;}//retorna el valor del item
+	 /**
+   	   * Method that depends on the id integer
+   	   * Sets the item_id of an item type to the value id
+   	   \param id
+   	   */
+	void Set_value(int id) 
+	{
+		item_id=id;
+	
+	}
 
-	~item() //destructor
-	{}
+	 /**
+   	   * Method the get the value of the item_id
+   	   * Get the data item_id of the item
+   	   */
+	int get_value(){return item_id;}
+
+	 //! Destructor
+ 	/*!
+	   * Destroys the item type.
+	   */
+	~item(){}
 };

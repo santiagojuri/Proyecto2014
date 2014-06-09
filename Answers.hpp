@@ -4,16 +4,16 @@
 
 /*! Answer is a class conformed by a vector<int>*/
 /*!This class is focused to be the answer of a 
-question or the sellection is made by the user*/
+question or the selection is made by the user*/
 class Answers
 {
-	vector<int> ans; /*!< Detailed description after the member */
+	vector<int> ans; /*!< Atribute of the class */
 
 public:
     /**
    	   * Constructor by default
    	   * Creates an Answers type with default parameters
-   	   \para <none>
+   	   \param <none>
    	   \sa Answers(int n), Answers(int n,int s) 
    	   */
 	Answers(){};
@@ -53,8 +53,18 @@ public:
 		}
 	}
 
+	/**
+       * Let the user add an integer
+       * Push into the vector<int> the integer "i"
+       \param i an integer argument
+       */
 	void add_ans(int i){ans.push_back(i);};
 
+	/**
+       * Method to get Answers data
+       * This method get the vector<int> ans of the class Answers
+       \sa 
+       */
 	vector<int> get_ans(){return ans;}
 
 	 //! Destructor

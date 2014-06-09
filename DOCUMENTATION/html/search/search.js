@@ -9,18 +9,20 @@ var indexSectionsWithContent =
 {
   0: "acgijmopqrs~",
   1: "aijpqr",
-  2: "acijpqr",
-  3: "acgijmpqrs~",
-  4: "o"
+  2: "s",
+  3: "acijpqr",
+  4: "acgijmpqrs~",
+  5: "o"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "files",
-  3: "functions",
-  4: "variables"
+  2: "namespaces",
+  3: "files",
+  4: "functions",
+  5: "variables"
 };
 
 function convertToId(search)
