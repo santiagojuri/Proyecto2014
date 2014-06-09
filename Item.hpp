@@ -12,10 +12,8 @@ using namespace std;
 
 class item
 {
-	/*Atributos (privados por defecto) */
 	int item_id; 
 public:
-	/*Metodos*/
 	item(){
 		item_id=0;
 		

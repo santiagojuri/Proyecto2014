@@ -1,16 +1,30 @@
 #include "item.hpp"
 #pragma once
 
-/*Clase que controla la pregunta*/
+
+/*! Answer is a class conformed by a vector<int>*/
+/*!This class is focused to be the answer of a 
+question or the sellection is made by the user*/
 class Answers
 {
-	/*Atributos privados por defecto*/
-	vector<int> ans;
+	vector<int> ans; /*!< Detailed description after the member */
 
 public:
-	/*Metodos*/
+    /**
+   	   * Constructor by default
+   	   * Creates an Answers type with default parameters
+   	   \para <none>
+   	   \sa Answers(int n), Answers(int n,int s) 
+   	   */
+	Answers(){};
 
-	//constructores:
+	/**
+       * Constructor depending on an integer
+       * Create an Answers type with  "n" integers where the user decides
+       what value will get each integer. 
+       \param n an integer argument
+       \sa Answers(), Answers(int n,int s) 
+       */
 	Answers(int n)
 	{
 		for(int i=0;i<n;i++)
@@ -22,13 +36,15 @@ public:
 		}
 	}
 
-	Answers(){};
-
-	void add_ans(int i){ans.push_back(i);};
-
-	vector<int> get_ans(){return ans;}
-
-	Answers(int n,int s){
+	/**
+       * Constructor depending on an integer
+       * Create an Answers type with  "n" integers where each one 
+       \param n an integer argument
+       \param s an integer argument
+       \sa Answers(), Answers(int n) 
+       */
+	Answers(int n,int s)
+	{
 		srand(time(0));
 		for(int i=0;i<n;i++)
 		{
@@ -36,6 +52,16 @@ public:
 			ans.push_back(a);
 		}
 	}
+
+	void add_ans(int i){ans.push_back(i);};
+
+	vector<int> get_ans(){return ans;}
+
+	 //! Destructor
+	 /*!
+   	   * Destroys the Answers type.
+   	   */
 	~Answers(){}; 
+
 
 };
